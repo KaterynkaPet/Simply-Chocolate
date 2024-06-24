@@ -127,6 +127,20 @@ img {
     gap: 18px;
 }
 
+.header-social-link {
+    display: flex;
+}
+
+.header-social-icon {
+    fill: transparent;
+    stroke: #111;
+}
+
+.header-social-icon:hover {
+    fill: transparent;
+    stroke: #FD9222;
+}
+
 /** ---------------------------------------- */
 
 /** --------------------HERO-------------------- */
@@ -137,6 +151,14 @@ img {
 
 .hero-container {
     background-color: rgba(17, 17, 17, 0.6);
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4)
+        ),
+        url(../img/chocolate-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius: 30px;
     padding: 380px 40px 40px 40px;
 
@@ -170,6 +192,12 @@ img {
     margin-right: 14px;
 }
 
+.hero-buy-button:hover,
+.hero-buy-button:active {
+    background-color: rgba(252, 241, 224, 1);
+    color: #FD9222;
+}
+
 .hero-made-button {
     padding: 14px 40px;
     font-weight: 600;
@@ -182,13 +210,40 @@ img {
 
 }
 
+.hero-made-button:hover,
+.hero-made-button:active {
+    background-color: #fff;
+    color: #FD9222;
+    border: 1px solid #FD9222;
+}
+
 .hero-down-button {
+    display: flex;
+    gap: 14px;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.03em;
     color: #fff;
     margin-left: auto;
+}
+
+.hero-down-button:hover {
+    color: #FD9222;
+}
+
+.hero-down-icon {
+    fill: #FD9222;
+    background-color: #fff;
+    border: none;
+    border-radius: 100%;
+    padding: 8px;
+}
+
+.hero-down-icon:hover {
+    background-color: #FD9222;
+    fill: #fff;
 }
 
 /** ---------------------------------------- */
@@ -210,6 +265,14 @@ img {
 
 .features-item {
    width: calc(( 100% - 88px * 2 ) /3);
+}
+
+.feature-icons {
+    fill: #FD9222;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    margin-bottom: 22px;
 }
 
 .features-subtitle {
@@ -320,9 +383,30 @@ img {
 
 .made-list {}
 
+.made-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.made-item::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: rgba(76, 76, 76, 1);
+    border-radius: 50%;
+    border: 1px solid rgba(236, 237, 237, 1);
+    flex-shrink: 0;
+}
+
+
+.made-item:hover::before {
+background-color: #FD9222;
+} 
+
 .made-item + .made-item {
     margin-top: 20px;
-} {}
+} 
 
 .made-item-text {
     font-weight: 400;
@@ -330,6 +414,10 @@ img {
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: #111;
+}
+
+.made-item-text:hover {
+    color: #FD9222;
 }
 
 .made-wrap {
@@ -389,6 +477,10 @@ img {
     padding: 0 24px 24px 24px;
 }
 
+.loved-item-text:hover {
+    color: #FD9222;
+}
+
 .loved-button {
     font-weight: 600;
     font-family: inherit;
@@ -401,6 +493,12 @@ img {
     padding: 14px 40px 14px 40px;
     display: block;
     margin: 0 auto;
+}
+
+.loved-button:hover,
+.loved-button:active {
+    background-color: #FD9222;
+    color: #Fff;
 }
 
 /** ---------------------------------------- */
