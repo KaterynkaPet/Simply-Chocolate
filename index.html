@@ -240,14 +240,14 @@
                 <h2 class="loved-title section-title"><span>chocolate</span> is loved</h2>
                 <ul class="loved-list">
                     <li class="loved-item">
-                        <img class="loved-img" src="./img/victoria.png" alt="Victoria Dobrzhanska" width="40" height="40">
+                        <img class="loved-img" src="./img/victoria.png" alt="Victoria Dobrzhanska" width="80" height="80">
                         <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
                         <p class="loved-item-text">
                             I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.
                         </p>
                     </li>
                     <li class="loved-item">
-                        <img class="loved-img" src="./img/nazar.png" alt="Nazar Babenko" width="40" height="40">
+                        <img class="loved-img" src="./img/nazar.png" alt="Nazar Babenko" width="80" height="80">
                         <h3 class="loved-subtitle">Nazar Babenko</h3>
                         <p class="loved-item-text">
                             This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is
@@ -256,7 +256,7 @@
                         </p>
                     </li>
                     <li class="loved-item">
-                        <img class="loved-img" src="./img/olena.png" alt="Olena Kampusch" width="40" height="40">
+                        <img class="loved-img" src="./img/olena.png" alt="Olena Kampusch" width="80" height="80">
                         <h3 class="loved-subtitle">Olena Kampusch</h3>
                         <p class="loved-item-text">
                             Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The
@@ -276,7 +276,7 @@
                 <div class="footer-content">
                     <p class="footer-heading"><span>Chocolate</span> a delicious cure for a bad day</p>
                 </div>
-                <div class="footer-contact">
+                <div class="footer-contacts">
                     <p class="footer-subtitle">Contact us</p>
                     <address class="footer-address">
                         <ul class="footer-address-list">
@@ -306,13 +306,20 @@
                     </ul>
                 </nav>
                 <form class="footer-subscribe">
-                    <input class="footer-input" type="email" name="Enter your email" placeholder="Enter your email" id="">
+                    <input 
+                        class="footer-input" 
+                        type="email" 
+                        name="Enter your email" 
+                        placeholder="Enter your email"
+                        aria-label="footer input"
+                    >
                     <button class="footer-button" type="button">Subscribe</button>
                 </form>
             </div>
         </div>
     </footer>
-    <div class="backdrop is-open" >
+
+    <div class="backdrop" >
         <div class="modal">
             <button type="button" class="modal-close-button">
                 <svg class="modal-close-icon" width="32px" height="32px">
@@ -352,8 +359,19 @@
                     <label for="user-comment" class="modal-label">Comment</label>
                     <textarea class="modal-text" name="user-comment" id="user-comment" placeholder="Enter text"></textarea>
                 </div>
-                
-                <button type="submit" class="modal-button">Send</button>
+                <div class="modal-field">
+                    <input type="checkbox" name="policy" id="policy" class="check-input visually-hidden" value="true" />
+                    <label for="policy" class="check-text">
+                        <span>
+                        <svg class="check-form-icon" width="10px" height="10px">
+                            <use href="./img/icons.svg#icon-check"></use>
+                        </svg>
+                        </span>
+                        I accept the terms and conditions of the 
+                        <a href="">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="modal-button" >Send</button>
             </form>
         </div>
     </div>

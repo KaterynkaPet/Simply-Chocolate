@@ -37,7 +37,6 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .visually-hidden {
@@ -537,7 +536,7 @@ background-color: #FD9222;
 }
 
 .loved-title {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
     text-transform: uppercase;
 }
 
@@ -551,13 +550,18 @@ background-color: #FD9222;
 
 .loved-item {
     width: calc((100% - 28px * 2) / 3);
+    padding: 54px 24px 24px 24px;
     background-color: #fff;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
+    position: relative;
 }
 
 .loved-img {
-    margin: 0 auto 18px;
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    transform: translate(-50%);
 }
 
 .loved-subtitle {
@@ -576,7 +580,6 @@ background-color: #FD9222;
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
-    padding: 0 24px 24px 24px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -714,6 +717,7 @@ background-color: #FD9222;
     border-radius: 30px;
     padding: 14px 24px;
     max-width: 313px;
+    height: 52px;
 }
 
 .footer-button {
@@ -724,6 +728,7 @@ background-color: #FD9222;
     color: #fff;
     background-color: #FD9222;
     border-radius: 100px;
+    border: none;
     padding: 17px 40px;
 }
 
@@ -871,3 +876,37 @@ background-color: #FD9222;
 .modal-text:focus {
     border-color: #FD9222;
 }
+
+.check-text {
+    line-height: normal;
+    letter-spacing: -0.02em;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(64, 64, 64, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+.check-text a {
+    text-decoration: underline;
+    color: #FD9222;
+}
+
+.check-text span {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(17, 17, 17, 0.14);
+    border-radius: 6px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.check-input:checked + .check-text span {
+    background-color: #FD9222;
+    border: none;
+    fill: #fff;
+}
+    
