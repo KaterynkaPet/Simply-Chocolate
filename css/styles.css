@@ -33,7 +33,7 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1166px;
+    max-width: 365px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -54,8 +54,10 @@ img {
 
 .section-title {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
+    /*font-size: 24px;
+    line-height: 1.17;*/
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: -0.03em;
     text-align: center;
     color: #111;
@@ -532,11 +534,12 @@ background-color: #FD9222;
 /** --------------------LOVED-------------------- */
 
 .loved {
-    padding-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .loved-title {
-    margin-bottom: 90px;
+    margin-bottom: 74px;
     text-transform: uppercase;
 }
 
@@ -544,13 +547,14 @@ background-color: #FD9222;
 
 .loved-list {
     display: flex;
-    gap: 28px;
-    margin-bottom: 49px;
+    flex-wrap: wrap;
+    gap: 58px;
+    margin-bottom: 32px;
 }
 
 .loved-item {
-    width: calc((100% - 28px * 2) / 3);
-    padding: 54px 24px 24px 24px;
+    width: 100%;
+    padding: 54px 18px 18px 18px;
     background-color: #fff;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
@@ -562,6 +566,7 @@ background-color: #FD9222;
     left: 50%;
     top: -40px;
     transform: translate(-50%);
+    border-radius: 50%;
 }
 
 .loved-subtitle {
@@ -909,4 +914,64 @@ background-color: #FD9222;
     border: none;
     fill: #fff;
 }
+
+/** ---------------------------------------- */
+
+@media screen  and (min-width: 768px) {
+    .container {
+        max-width: 734px;
+    }
+
+    .section-title {
+    font-size: 24px;
+    line-height: 1.17;
+    }
+
+    .loved {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .loved-title {
+        margin-bottom: 90px;
+    }
+
+    .loved-list {
+    gap: 58px 16px;
+    margin-bottom: 50px; 
+    justify-content: center;
+    }
     
+    .loved-item {
+    width: calc((100% - 16px) / 2);
+    padding: 54px 16px 16px 16px;
+    }
+
+/** ---------------------------------------- */
+
+}
+
+/** ---------------------------------------- */
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1166px;
+    }
+
+    .loved {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .loved-list {
+        gap: 28px;
+    }
+
+    .loved-item {
+        width: calc((100% - 56px) / 3);
+        padding: 54px 24px 24px 24px;
+   }
+
+/** ---------------------------------------- */
+
+}
