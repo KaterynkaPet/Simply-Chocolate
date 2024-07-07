@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <!--<header class="header">
+    <header class="header">
         <div class="container header-container">
             <nav class="header-navigation">
                 <a class="header-logo" href="./index.html">
@@ -52,11 +52,15 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu-open-button">icon-burger</button>
         </div>
-    </header>-->
+        <div class="mob-menu">
+            
+        </div>
+    </header>
 
     <main class="main">
-        <!--<section class="hero">
+        <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">
                     Treat yourself or a loved one to
@@ -73,7 +77,7 @@
                     </a>
                 </div>
             </div>
-        </section>-->
+        </section>
 
         <!--<section class="features">
             <div class="container">
@@ -191,11 +195,30 @@
             </div>
         </section>-->
 
-        <!--<section class="made">
+        <section class="made">
             <div class="container">
                 <h2 class="made-title section-title">hOW IT'S <span>made</span>?</h2>
                 <div class="made-wrap">
-                    <img class="made-img" src="./img/how-its-made.jpg" alt="plate with chocolate" width="600" height="400">
+                    <picture>
+                        <source
+                        srcset="./img/how-its-made.jpg 1x, ./img/how-its-made-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+                        <source srcset="./img/how-its-made-tab.jpg 1x, ./img/how-its-made-tab-2x.jpg 2x" 
+                        media="(min-width: 768px)" 
+                        width="614" 
+                        height="400"
+                        />
+                        <source srcset="./img/how-its-made-mob.jpg 1x, ./img/how-its-made-mob-2x.jpg 2x" 
+                        media="(max-width: 767px)" 
+                        width="335" 
+                        height="500"
+                        />
+                        <img class="made-img"  
+                        src="./img/how-its-made.jpg"
+                        alt="plate with chocolate" 
+                        />
+                    </picture>
                     <div class="made-content">
                         <h3 class="made-subtitle">
                             Try our chocolates today and discover the perfect balance of flavor
@@ -233,7 +256,7 @@
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
 
         <section class="loved">
             <div class="container">
