@@ -149,6 +149,99 @@ img {
     stroke: #FD9222;
 }
 
+.menu-open-button {
+    fill: transparent;
+    background-color: transparent;
+    stroke: #111;
+    border: none;
+    transition-property: fill, stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-open-button:hover {
+    fill: transparent;
+    stroke: #FD9222;
+}
+
+/*-------------------------MOBILE MENU----------------------------*/
+
+.mob-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(30, 24, 35, 1);
+    padding: 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.menu-close-button {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 88px;
+    fill: transparent;
+    background-color: transparent;
+    stroke: #fff;
+    border: none;
+    transition-property: fill, stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-button:hover {
+    fill: transparent;
+    stroke: #FD9222;
+}
+
+.icon-x-close {}
+
+.mob-menu-list {
+    padding-left: 28px;
+
+}
+
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mob-menu-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-link:hover {
+    color: #FD9222;
+}
+
+.mob-social-list {
+    display: flex;
+    gap: 18px;
+}
+
+.mob-social-item {}
+
+.mob-social-link {}
+
+.mob-social-icon {
+    fill: transparent;
+    stroke: #fff;
+}
+
 /** ---------------------------------------- */
 
 /** --------------------HERO-------------------- */
@@ -509,7 +602,7 @@ img {
 
 
 .made-item:hover::before {
-background-color: #FD9222;
+    background-color: #FD9222;
 } 
 
 .made-item + .made-item {
