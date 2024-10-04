@@ -104,7 +104,6 @@ img {
 }
 
 .header-menu-list {
-    /*display: flex;*/
     display: none;
     gap: 24px;
     align-items: center;
@@ -127,7 +126,6 @@ img {
 }
 
 .header-social-list {
-    /*display: flex;*/
     display: none;
     gap: 18px;
 }
@@ -1024,9 +1022,20 @@ img {
     }
 
     .section-title {
-    font-size: 24px;
-    line-height: 1.17;
+        font-size: 24px;
+        line-height: 1.17;
     }
+
+    .header-menu-list, 
+    .header-social-list {
+        display: flex;
+    }
+
+    .menu-open-button, 
+    .mob-menu {
+        display: none;
+    }
+
 
     .hero-container {
         padding: 380px 40px 40px 40px;
